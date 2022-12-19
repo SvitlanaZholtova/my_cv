@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offer Me a Job</title>
+</head>
+
+<body>
+    <h1>Hire me</h1>
+    <br />
+    <h3>Contact information</h3>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th align="left">Phone:</th>
+            <td><a href="tel: +380667256867">+380667256867</a></td>
+        </tr>
+        <tr>
+            <th align="left">Address:</th>  
+            <td>Vynnyky, Lviv region</td>
+        </tr>
+    </table>
+    <br />
+
+    
+    <form action="/offer_a_job.html" method="get">
+        <fieldset>
+            <legend>Contact form</legend>
+            <table border="0"  cellspacing="0" cellpadding="0">
+
+            <tr> 
+                <td>
+                <label for="email">E-mail:</label>
+                </td>
+                <td>
+                <input type="email" id="email" name="email" required/>
+                </td>
+            </tr>
+            <br/><br/>
+
+            <tr>
+                <td>
+                <label for="description">Description:
+                </td>
+                <td>
+                <textarea rows="10" cols="50" name="description" id="description"></textarea>
+                </label>
+                </td>
+            </tr>
+
+            <br/> <br/>
+
+            <tr>
+                <td> Work type:</td>
+                <td>
+                <select name="work-type">
+
+                <option value=""></option>
+                <option value="work-in-the-office">Work in the office</option>
+                <option value="remote-work">Remote work</option>
+                <option value="one-time-project">One-time project</option>
+                </select>
+                </td>
+            </tr>
+
+            <br/> <br/>
+
+            <tr>
+                <td>
+                <input type="submit" value="Hire me"/>
+                </td>
+            </tr>
+            
+            </table>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
