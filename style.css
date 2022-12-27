@@ -9,6 +9,7 @@
 
 .table-header-uppercase {
     text-transform: uppercase;
+    background-color: green;
 }
 
 .link {
@@ -23,4 +24,21 @@
 .link:visited {
     color: #005;
     text-decoration: underline;
+}
+
+.bottom-border {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: aqua;
+}
+
+.photo-border {
+    border: 2px; 
+    border-style: solid;
+    border-color: aqua;
+    padding: 10px;
+}
+
+.table-color {
+    background-color: lightgreen;
 }
