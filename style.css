@@ -13,8 +13,6 @@
 }
 
 .right-section {
-  /*display: inline-grid;
-  grid-template-rows: repeat(10 1fr);*/
   justify-self: right;
   background-color: white;
   border-left: 1px solid black;
