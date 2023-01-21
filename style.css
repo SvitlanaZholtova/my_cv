@@ -137,9 +137,11 @@
   margin-right: 40px;
 }
 
-li{
-  margin-left: 30px;
+ul{
+  margin-left: 60px;
+  list-style-position: inside;
 }
+
 .we-1{
   margin-left: 55px;
   margin-right: 40px;
