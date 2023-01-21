@@ -113,14 +113,15 @@
   text-decoration: underline;
 }
 
-.link:hover {
-  text-decoration: none;
-}
-
 .link:visited {
   color: #005;
   text-decoration: underline;
 }
+
+.link:hover {
+  text-decoration: none;
+}
+
 .block-name{
   font-weight: 600;
   font-size: 30px;
@@ -132,6 +133,7 @@
   margin-top: 58px;
   line-height: 2em;
 }
+
 .summary-text{
   margin-left: 55px;
   margin-right: 40px;
@@ -147,6 +149,7 @@ ul{
   margin-right: 40px;
   font-size: 16px;
 }
+
 .we-2{
   margin-left: 55px;
   margin-right: 40px;
@@ -162,4 +165,105 @@ ul{
 
 .we-header{
   font-weight: bold;
+}
+
+.form-container {
+  max-width: 1024px;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.contacts-table{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.contacts-cell{
+  border: 1px black solid;
+  padding: 5px;
+  text-align: left;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #7B61FF;
+} 
+
+input,
+select,
+textarea {
+  appearance: none;
+  border-radius: 2px;
+}
+
+.asterisk{
+  color: red;
+  margin-left: .3em;
+}
+
+.contact-form-headers {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #0048D9;
+  color: white;
+  padding: 4px 16px 4px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: 0;
+  margin: 10px 5px;
+}
+
+input[type="submit"]:hover{
+  background-color: #002266;
+}
+
+input::placeholder{
+  color:grey;
+  padding: 2px;
+}
+
+input[type="email"] {
+  line-height: 1.5em;
+}
+
+input:invalid{
+  border-color: red;
+}
+
+.error{
+  display: none;
+  color: red;
+}
+
+.email:invalid + .error {
+  display: block;
+}
+
+select{
+  background: url('./assets/Vector.png') no-repeat right;
+  min-width: 10rem;
+  line-height: 1.5em;
 }
