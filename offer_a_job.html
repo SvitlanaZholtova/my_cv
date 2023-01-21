@@ -1,75 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
     <title>Offer Me a Job</title>
 </head>
 
 <body>
+    <div class="form-container">
     <h1>Offer Me a Job</h1>
-    <br />
+    
     <h3>Contact information</h3>
-    <table border="1" cellspacing="0" cellpadding="10">
-        <tr>
-            <th align="left">Phone:</th>
-            <td><a href="tel: +380667256867">+380667256867</a></td>
+    <table class="contacts-table">
+        <tr class="contacts-cell">
+            <th class="contacts-cell">Phone:</th>
+            <td class="contacts-cell"><a href="tel: +380667256867">+380667256867</a></td>
         </tr>
-        <tr>
-            <th align="left">Address:</th>  
-            <td>Vynnyky, Lviv region</td>
+        <tr class="contacts-cell">
+            <th class="contacts-cell">Address:</th>  
+            <td class="contacts-cell">Vynnyky, Lviv region</td>
         </tr>
     </table>
-    <br />
+   
+    <form action="./cv.html" method="get">
 
-    
-    <form action="/offer_a_job.html" method="get">
-        <fieldset>
+        <fieldset class="fieldset-style">
             <legend>Contact form</legend>
-            <table border="0"  cellspacing="0" cellpadding="0">
 
-            <tr> 
-                <td>
-                <label for="email">E-mail:</label>
-                </td>
-                <td>
-                <input type="email" id="email" name="email" required/>
-                </td>
-            </tr>
+            <label for="email"><span class="contact-form-headers">E-mail:  <span class="asterisk"> *</span></label>
+            <input type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="Please enter E-mail address"
+                    class="email"/> 
+            <p class="error">This field is required</p>          
 
-            <tr>
-                <td>
-                <label for="description">Description:
-                </td>
-                <td>
-                <textarea rows="10" cols="50" name="description" id="description"></textarea>
-                </label>
-                </td>
-            </tr>
+            <label for="description"><span class="contact-form-headers">Description:</span>
+            <textarea 
+                rows="10" 
+                cols="50" 
+                name="description" 
+                id="description">
+            </textarea>
+            </label> </br>
 
-            <tr>
-                <td>
-                <label for="work-type"> Work type:</td>
-                <td>
+            <label for="work-type"> <span class="contact-form-headers">Work type:</span>
                 <select name="work-type" id="work-type">
-
-                <option value=""></option>
-                <option value="work-in-the-office">Work in the office</option>
-                <option value="remote-work">Remote work</option>
-                <option value="one-time-project">One-time project</option>
+                    <option value=""></option> 
+                    <option value="work-in-the-office">Work in the office</option>
+                    <option value="remote-work">Remote work</option>
+                    <option value="one-time-project">One-time project</option>
                 </select>
-                </label>
-                </td>
-            </tr>
+            </label>
 
-            <tr>
-                <td>
-                <input type="submit" value="Hire me"/>
-                </td>
-            </tr>
-            
-            </table>
-
+            <input type="submit" value="Hire me"/>
         </fieldset>
+
     </form>
 
+    </div>
 </body>
 </html>
