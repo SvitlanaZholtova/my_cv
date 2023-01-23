@@ -20,20 +20,6 @@
   position: fixed;
 }
 
-/*
-.left-section {
-  display: inline-grid;
-  grid-template-rows: repeat(10 1fr);
-}
-
-.right-section {
-  justify-self: right;
-  background-color: white;
-  border-left: 1px solid black;
-  grid-template-rows: minmax(100px, auto);
-}
-*/
-
 .name{
   font-weight: 600;
   font-size: 40px;
@@ -180,17 +166,26 @@ ul{
 }
 
 .form-container {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
   max-width: 1024px;
   max-height: 100vh;
-  position: absolute;
-  left: calc(50%-200px);
-  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+form {
+  max-width: 1024px;
+  position: relative;
 }
 
 fieldset{
-  max-width: 800px;
+  width: fit-content;
+  max-width: 1024px;
   border-radius: 10px;
   padding: 15px;
+  position: sticky;
+  top: calc(50% - 210px);
+  left: calc((100% - 420px)/2);
 }
 
 .contacts-table{

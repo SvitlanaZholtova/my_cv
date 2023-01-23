@@ -6,58 +6,59 @@
 </head>
 
 <body>
-    <div class="form-container">
-    <h1>Offer Me a Job</h1>
+    <div class="form-container"
+        <h1>Offer Me a Job</h1>
     
-    <h3>Contact information</h3>
-    <table class="contacts-table">
-        <tr class="contacts-cell">
-            <th class="contacts-cell">Phone:</th>
-            <td class="contacts-cell"><a href="tel: +380667256867">+380667256867</a></td>
-        </tr>
-        <tr class="contacts-cell">
-            <th class="contacts-cell">Address:</th>  
-            <td class="contacts-cell">Vynnyky, Lviv region</td>
-        </tr>
-    </table>
+        <h3>Contact information</h3>
+        <table class="contacts-table">
+            <tr class="contacts-cell">
+                <th class="contacts-cell">Phone:</th>
+                <td class="contacts-cell"><a href="tel: +380667256867">+380667256867</a></td>
+            </tr>
+            <tr class="contacts-cell">
+                <th class="contacts-cell">Address:</th>  
+                <td class="contacts-cell">Vynnyky, Lviv region</td>
+            </tr>
+        </table>
    
-    <form action="./cv.html" method="get">
+        <form action="./cv.html" method="get">
 
-        <fieldset class="fieldset-style">
-            <legend>Contact form</legend>
+            <fieldset>
+                <legend>Contact form</legend>
 
-            <label for="email"><span class="contact-form-headers">E-mail:  <span class="asterisk"> *</span></label>
-            <input type="email" 
-                    id="email" 
-                    name="email" 
-                    required 
-                    placeholder="Please enter E-mail address"
-                    class="email"/> 
-            <p class="error">This field is required</p>          
+                <label for="email"><span class="contact-form-headers">E-mail:  <span class="asterisk"> *</span></label>
+                <input type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="Please enter E-mail address"
+                        class="email"/> 
+                <p class="error">This field is required</p>          
 
-            <label for="description"><span class="contact-form-headers">Description:</span>
-            <textarea 
-                rows="10" 
-                cols="50" 
-                name="description" 
-                id="description">
-            </textarea>
-            </label> </br>
+                <label for="description"><span class="contact-form-headers">Description:</span>
+                <textarea 
+                    rows="10" 
+                    cols="50" 
+                    name="description" 
+                    id="description">
+                </textarea>
+                </label> </br>
 
-            <label for="work-type"> <span class="contact-form-headers">Work type:</span>
-                <select name="work-type" id="work-type">
-                    <option value=""></option> 
-                    <option value="work-in-the-office">Work in the office</option>
-                    <option value="remote-work">Remote work</option>
-                    <option value="one-time-project">One-time project</option>
-                </select>
-            </label>
+                <label for="work-type"> <span class="contact-form-headers">Work type:</span>
+                    <select name="work-type" id="work-type">
+                        <option value=""></option> 
+                        <option value="work-in-the-office">Work in the office</option>
+                        <option value="remote-work">Remote work</option>
+                        <option value="one-time-project">One-time project</option>
+                    </select>
+                </label>
 
-            <input type="submit" value="Hire me"/>
-        </fieldset>
+                <input type="submit" value="Hire me"/>
+            </fieldset>
 
-    </form>
-
+        </form>
+        </div>
     </div>
+
 </body>
 </html>
