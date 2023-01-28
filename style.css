@@ -3,18 +3,8 @@
   padding: 0;
 }
 
-/*colors*/
+/*sizes*/
 :root{
-  --color-bg-left: #86A3B4;
-  --color-bg-right: #FFFFFF;
-  --color-font-left: #263036;
-  --color-font-right: #1E1E1E;
-  --color-name: #FFFFFF;
-  --color-surname: #1C2E8C;
-  --link-base-color: #00f;
-  --link-visited-color: #005;
-
-  /*sizes*/
   --font-size-name: 40px;
   --font-weight-main: 600;
   --font-size-left-headings: 32px;
