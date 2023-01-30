@@ -11,8 +11,8 @@
   --font-size-left-subheadings: 24px;
   --font-size-main-text: 16px;
   --font-size-right-headings: 36px;
-  --border-line-1: 6px solid #1E1E1E;
-  --border-line-2: 5px solid #000000;
+  --border-line-1: 6px solid;
+  --border-line-2: 5px solid;
   --line-height-medium: 1.5em;
   --line-height-large: 2em;
 
@@ -94,6 +94,7 @@
   color: var(--color-font-left);
   line-height: var(--line-height-large);
   border-bottom: var(--border-line-1);
+  border-color: var(--border-line-1-color);
   margin-right: var(--margin-15);
   margin-bottom: var(--margin-30);
 }
@@ -119,6 +120,7 @@
   line-height: var(--line-height-large);
   color: var(--color-font-left);
   border-bottom: var(--border-line-1);
+  border-color: var(--border-line-1-color);
   margin-right: var(--margin-15);
   margin-bottom: var(--margin-30);
 }
@@ -152,6 +154,7 @@
   font-size: var(--font-size-right-headings);
   color: var(--color-font-right);
   border-bottom: var(--border-line-2);
+  border-color: var(--border-line-2-color);
   margin-bottom: var(--margin-30);
   margin-left: var(--magrin-55);
   margin-right: var(--margin-40);
