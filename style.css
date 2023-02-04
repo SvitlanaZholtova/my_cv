@@ -47,12 +47,12 @@
 @media screen and (min-width: 356px) {
     .white {
       border-left: 1px solid #000000;
-      box-shadow: inset 5px 0px 10px grey;
+      box-shadow: inset 5px 0px 13px #504B4B;
   }
     .image:hover{
       transform: scale(2);
       z-index: 1;
-      box-shadow: 2px 2px 2px 2px grey;
+      box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
     }
     }
 
