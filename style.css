@@ -48,6 +48,11 @@
     .white {
       border-left: 1px solid black;
   }
+    .image:hover{
+      transform: scale(2);
+      z-index: 1;
+      box-shadow: 2px 2px 2px 2px grey;
+    }
     }
 
 @media screen and (max-width: 728px) {
@@ -89,6 +94,7 @@
   "position"
   "contacts"
   "languages";
+  box-shadow: 10px 0px 5px grey;
 }
 
 .name{
@@ -240,6 +246,11 @@ ul{
   margin-right: var(--margin-40);
   margin-top: var(--margin-15);
   font-size: var(--font-size-16);
+  opacity: 70%;
+}
+
+.we-2:hover {
+  opacity: 100%;
 }
 
 .education-container {
