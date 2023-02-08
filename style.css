@@ -43,18 +43,30 @@
     border-bottom: 1px solid black;
   }
 }
+@keyframes image-hover{
+  from{
+    transform: scale(1);
+    rotate: 90deg;
+  }
+  to{
+    transform: scale(2);
+    rotate: 0deg;
+  }
+}
 
 @media screen and (min-width: 356px) {
     .white {
       border-left: 1px solid #000000;
-      box-shadow: inset 5px 0px 13px #504B4B;
+      box-shadow: inset 5px -5px 13px #504B4B;
   }
     .image:hover{
       transform: scale(2);
       z-index: 1;
       box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
+      animation-name: image-hover;
+      animation-duration: 2s;
     }
-    }
+}
 
 @media screen and (max-width: 728px) {
   .block-name{
@@ -71,7 +83,14 @@
 .name-container {
   grid-area: name;
 }
-
+@keyframes white-eruption{
+  from {
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
 .white {
   background-color: var(--color-bg-right);
   /*border-left: 1px solid black;*/
@@ -82,7 +101,19 @@
   "summary"
   "skills"
   "experience"
-  "education"
+  "education";
+  animation-name: white-eruption;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+@keyframes blue-eruption{
+  from {
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
 }
 
 .blue{
@@ -95,6 +126,8 @@
   "position"
   "contacts"
   "languages";
+  animation-name: blue-eruption;
+  animation-duration: 2s;
 }
 
 .name{
@@ -248,9 +281,19 @@ ul{
   font-size: var(--font-size-16);
   opacity: 70%;
 }
+@keyframes we-2-opacity {
+  from{
+    opacity: 70%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
 
 .we-2:hover {
   opacity: 100%;
+  animation-name: we-2-opacity;
+  animation-duration: 1s;
 }
 
 .education-container {
@@ -275,6 +318,17 @@ grid-area: education;
   max-width: 1024px;
   max-height: 100vh;
   position: relative;
+  animation-name: hire-me;
+  animation-duration: 1s;
+}
+  
+@keyframes hire-me {
+  from{
+    transform: scale(200%);
+  }
+  to {
+    transform: scale(100%);
+  }
 }
 
 form {
