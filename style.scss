@@ -87,7 +87,13 @@
 .name-container {
   grid-area: name;
 }
-@keyframes white-eruption{
+
+@mixin eruption ($duration) {
+  animation-name: eruption;
+  animation-duration: $duration;
+}
+
+@keyframes eruption{
   from {
     transform: translateY(100%);
   }
@@ -95,6 +101,7 @@
     transform: translateY(0%);
   }
 }
+
 .white {
   background-color: var(--color-bg-right);
   /*border-left: 1px solid black;*/
@@ -106,18 +113,8 @@
   "skills"
   "experience"
   "education";
-  animation-name: white-eruption;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-}
-
-@keyframes blue-eruption{
-  from {
-    transform: translateY(100%);
-  }
-  to{
-    transform: translateY(0%);
-  }
+  @include eruption(2s);
+  animation-delay: .5s;
 }
 
 .blue{
@@ -130,27 +127,27 @@
   "position"
   "contacts"
   "languages";
-  animation-name: blue-eruption;
-  animation-duration: 2s;
+  @include eruption(2s);
+}
+
+.name-block {
+  font-weight: var(--font-weight-main);
+  font-size: var(--font-size-name);
+  margin-left: var(--margin-40);
+  padding: var(--padding-main);
+  line-height: var(--line-height-large);
 }
 
 .name{
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-name);
+  @extend .name-block;
   color: var(--color-name);
-  line-height: var(--line-height-large);
-  margin-left: var(--margin-40);
   margin-top: var(--margin-60);
-  padding-top: var(--padding-main);
 }
 
 .surname{
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-name);
+  @extend .name-block;
   color: var(--color-surname);
-  margin-left: var(--margin-40);
   margin-bottom: var(--margin-15);
-  padding: var(--padding-main) 0px var(--padding-main) 0px;
 }
 
 .image{

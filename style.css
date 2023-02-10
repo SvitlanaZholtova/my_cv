@@ -122,7 +122,7 @@
   grid-area: name;
 }
 
-@-webkit-keyframes white-eruption {
+@-webkit-keyframes eruption {
   from {
     transform: translateY(100%);
   }
@@ -131,7 +131,7 @@
   }
 }
 
-@keyframes white-eruption {
+@keyframes eruption {
   from {
     transform: translateY(100%);
   }
@@ -146,59 +146,41 @@
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr;
   grid-template-areas: "summary" "skills" "experience" "education";
-  -webkit-animation-name: white-eruption;
-          animation-name: white-eruption;
+  -webkit-animation-name: eruption;
+          animation-name: eruption;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-@-webkit-keyframes blue-eruption {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes blue-eruption {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
 .blue {
   background-color: var(--color-bg-left);
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.2fr 1fr 1.2fr;
   grid-template-areas: "name" "photo" "position" "contacts" "languages";
-  -webkit-animation-name: blue-eruption;
-          animation-name: blue-eruption;
+  -webkit-animation-name: eruption;
+          animation-name: eruption;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 
-.name {
+.name-block, .surname, .name {
   font-weight: var(--font-weight-main);
   font-size: var(--font-size-name);
-  color: var(--color-name);
-  line-height: var(--line-height-large);
   margin-left: var(--margin-40);
+  padding: var(--padding-main);
+  line-height: var(--line-height-large);
+}
+
+.name {
+  color: var(--color-name);
   margin-top: var(--margin-60);
-  padding-top: var(--padding-main);
 }
 
 .surname {
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-name);
   color: var(--color-surname);
-  margin-left: var(--margin-40);
   margin-bottom: var(--margin-15);
-  padding: var(--padding-main) 0px var(--padding-main) 0px;
 }
 
 .image {
