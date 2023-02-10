@@ -247,7 +247,7 @@ textarea {
 }
 
 .asterisk{
-  color: red;
+  color: #ED0131;
   margin-left: .3em;
 }
 
@@ -288,12 +288,12 @@ input[type="email"] {
 }
 
 input:invalid{
-  border-color: red;
+  border-color: #ED0131;
 }
 
 .error{
   display: none;
-  color: red;
+  color: #ED0131;
 }
 
 .email:invalid + .error {
