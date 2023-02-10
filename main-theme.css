@@ -1,13 +1,12 @@
-/*colors*/
 .main-theme{
-    --color-bg-left: #86A3B4;
-    --color-bg-right: #FFFFFF;
-    --color-font-left: #263036;
-    --color-font-right: #1E1E1E;
-    --color-name: #FFFFFF;
-    --color-surname: #1C2E8C;
-    --link-base-color: #1C2E8C;
-    --link-visited-color: #005;
-    --border-line-1-color: #1E1E1E;
-    --border-line-2-color: #000000;
-  }
+  --color-bg-left: #86A3B4;
+  --color-bg-right: #FFFFFF;
+  --color-font-left: #263036;
+  --color-font-right: #1E1E1E;
+  --color-name: #FFFFFF;
+  --color-surname: #1C2E8C;
+  --link-base-color: #1C2E8C;
+  --link-visited-color: #005;
+  --border-line-1-color: #1E1E1E;
+  --border-line-2-color: #000000;
+}

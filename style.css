@@ -57,7 +57,10 @@
 @media screen and (min-width: 356px) {
     .white {
       border-left: 1px solid #000000;
-      box-shadow: inset 5px -5px 13px #504B4B;
+    }
+    .blue{
+      box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+      z-index: 1;
   }
     .image:hover{
       transform: scale(2);
@@ -146,7 +149,7 @@
   color: var(--color-surname);
   margin-left: var(--margin-40);
   margin-bottom: var(--margin-15);
-  padding: var(--padding-main) 0px var(--padding-main) 0px;
+  padding: var(--padding-main);
 }
 
 .image{
