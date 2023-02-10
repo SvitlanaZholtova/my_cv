@@ -60,6 +60,7 @@
     }
     .blue {
       box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+      z-index: 1;
     }
     .image:hover{
       transform: scale(2);
