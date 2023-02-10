@@ -5,28 +5,24 @@
 @import 'my-theme';
 @import 'main-theme';
 
-/*sizes*/
-:root{
-  --font-size-name: 40px;
-  --font-weight-main: 600;
-  --font-size-32: 32px;
-  --font-size-24: 24px;
-  --font-size-16: 16px;
-  --font-size-36: 36px;
-  --border-line-1: 6px solid;
-  --border-line-2: 5px solid;
-  --line-height-medium: 1.5em;
-  --line-height-large: 2em;
+$margin-40: 40px;
+$margin-15: 15px;
+$margin-20: 20px;
+$magrin-55: 55px;
+$margin-30: 30px;
+$margin-60: 60px;
+$padding-main: 2px;
 
-  /*margins 5px*/
-  --margin-40: 40px;
-  --margin-15: 15px;
-  --margin-20: 20px;
-  --magrin-55: 55px;
-  --margin-30: 30px;
-  --margin-60: 60px;
-  --padding-main: 2px;
-}
+$font-size-name: 40px;
+$font-weight-main: 600;
+$font-size-32: 32px;
+$font-size-24: 24px;
+$font-size-16: 16px;
+$font-size-36: 36px;
+$border-line-1: 6px solid;
+$border-line-2: 5px solid;
+$line-height-medium: 1.5em;
+$line-height-large: 2em; 
 
 .grid {
   display: grid;
@@ -75,8 +71,8 @@
 
 @media screen and (max-width: 728px) {
   .block-name{
-    font-size: var(--font-size-16);
-    line-height: var(--line-height-medium);
+    font-size: $font-size-16;
+    line-height: $line-height-medium;
   }
 }
 
@@ -103,8 +99,7 @@
 }
 
 .white {
-  background-color: var(--color-bg-right);
-  /*border-left: 1px solid black;*/
+  background-color: $color-bg-right;
   position: relative;
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr;
@@ -118,7 +113,7 @@
 }
 
 .blue{
-  background-color: var(--color-bg-left);
+  background-color: $color-bg-left;
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.2fr 1fr 1.2fr;
   grid-template-areas: 
@@ -131,23 +126,23 @@
 }
 
 .name-block {
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-name);
-  margin-left: var(--margin-40);
-  padding: var(--padding-main);
-  line-height: var(--line-height-large);
+  font-weight: $font-weight-main;
+  font-size: $font-size-name;
+  margin-left: $margin-40;
+  padding: $padding-main;
+  line-height: $line-height-large;
 }
 
 .name{
   @extend .name-block;
-  color: var(--color-name);
-  margin-top: var(--margin-60);
+  color: $color-name;
+  margin-top: $margin-60;
 }
 
 .surname{
   @extend .name-block;
-  color: var(--color-surname);
-  margin-bottom: var(--margin-15);
+  color: $color-surname;
+  margin-bottom: $margin-15;
 }
 
 .image{
@@ -158,94 +153,98 @@
 }
 
 .position{
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-16);
-  color: var(--color-font-left);
-  margin-top: var(--margin-20);
-  margin-bottom: var(--margin-40);
-  margin-left: var(--margin-40);
-  line-height: var(--line-height-medium);
+  font-weight: $font-weight-main;
+  font-size: $font-size-16;
+  color: $color-font-left;
+  margin-top: $margin-20;
+  margin-bottom: $margin-40;
+  margin-left: $margin-40;
+  line-height: $line-height-medium;
   grid-area: position;
 }
 
 .contacts-container{
-  margin-left: var(--margin-40);
+  margin-left: $margin-40;
   grid-area: contacts;
 }
 
 .contact{
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-32);
-  color: var(--color-font-left);
-  line-height: var(--line-height-large);
-  border-bottom: var(--border-line-1);
-  border-color: var(--border-line-1-color);
-  margin-right: var(--margin-15);
-  margin-bottom: var(--margin-30);
+  font-weight: $font-weight-main;
+  font-size: $font-size-32;
+  color: $color-font-left;
+  line-height: $line-height-large;
+  border-bottom: $border-line-1;
+  border-color: $border-line-1-color;
+  margin-right: $margin-15;
+  margin-bottom: $margin-30;
 }
 
 .line-name {
   font-weight: bold;
-  font-size: var(--font-size-24);
-  line-height: var(--line-height-medium);
-  color: var(--color-font-left);
+  font-size: $font-size-24;
+  line-height: $line-height-medium;
+  color: $color-font-left;
 }
 
 .contact-value{
-  line-height: var(--line-height-large);
-  margin-bottom: var(--margin-20);
-  color: var(--color-font-left);
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-16);
+  line-height: $line-height-large;
+  margin-bottom: $margin-20;
+  color: $color-font-left;
+  font-weight: $font-weight-main;
+  font-size: $font-size-16;
 }
 
 .languages {
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-32);
-  line-height: var(--line-height-large);
-  color: var(--color-font-left);
-  border-bottom: var(--border-line-1);
-  border-color: var(--border-line-1-color);
-  margin-right: var(--margin-15);
-  margin-bottom: var(--margin-30);
+  font-weight: $font-weight-main;
+  font-size: $font-size-32;
+  line-height: $line-height-large;
+  color: $color-font-left;
+  border-bottom: $border-line-1;
+  border-color: $border-line-1-color;
+  margin-right: $margin-15;
+  margin-bottom: $margin-30;
 }
 
 .languages-container {
-  margin-left: var(--margin-40);
-  font-size: var(--font-size-16);
-  line-height: var(--line-height-medium);
-  font-weight: var(--font-weight-main);
-  color: var(--color-font-left);
-  margin-bottom: var(--margin-30);
+  margin-left: $margin-40;
+  font-size: $font-size-16;
+  line-height: $line-height-medium;
+  font-weight: $font-weight-main;
+  color: $color-font-left;
+  margin-bottom: $margin-30;
   grid-area: languages;
 }
 
 .link {
-  color: var(--link-base-color);
+  color: $link-base-color;
   text-decoration: underline;
-}
 
-.link:visited {
-  color: var(--link-visited-color);
+  &:visited {
+  color: $link-visited-color;
   text-decoration: underline;
-}
+  }
 
-.link:hover {
+  &:hover {
   text-decoration: none;
+  }
 }
 
 /*cv-right-section*/
+@mixin margin-side {
+  margin-left: $magrin-55;
+  margin-right: $margin-40;
+}
+
 .block-name{
-  font-weight: var(--font-weight-main);
-  font-size: var(--font-size-36);
-  color: var(--color-font-right);
-  border-bottom: var(--border-line-2);
-  border-color: var(--border-line-2-color);
-  margin-bottom: var(--margin-30);
-  margin-left: var(--magrin-55);
-  margin-right: var(--margin-40);
-  margin-top: var(--margin-60);
-  line-height: var(--line-height-large);
+  @include margin-side();
+  font-weight: $font-weight-main;
+  font-size: $font-size-36;
+  color: $color-font-right;
+  border-bottom: $border-line-2;
+  border-color: $border-line-2-color;
+  margin-bottom: $margin-30;
+  margin-top: $margin-60;
+  line-height: $line-height-large;
 }
 
 .summary-container{
@@ -257,29 +256,27 @@
 }
 
 .summary-text{
-  margin-left: var(--magrin-55);
-  margin-right: var(--margin-40);
+  @include margin-side();
 }
+
 .experience-container{
   grid-area: experience;
 }
 
 ul{
-  margin-left: var(--margin-60);
+  margin-left: $margin-60;
   list-style-position: inside;
 }
 
 .we-1{
-  margin-left: var(--magrin-55);
-  margin-right: var(--margin-40);
-  font-size: var(--font-size-16);
+  @include margin-side();
+  font-size: $font-size-16;
 }
 
 .we-2{
-  margin-left: var(--magrin-55);
-  margin-right: var(--margin-40);
-  margin-top: var(--margin-15);
-  font-size: var(--font-size-16);
+  @include margin-side();
+  margin-top: $margin-15;
+  font-size: $font-size-16;
   opacity: 70%;
 }
 @keyframes we-2-opacity {
@@ -302,10 +299,9 @@ grid-area: education;
 }
 
 .education-text{
-  margin-left: var(--magrin-55);
-  margin-right: var(--margin-40);
-  font-size: var(--font-size-16);
-  margin-bottom: var(--margin-30);
+  @include margin-side();
+  font-size: $font-size-16;
+  margin-bottom: $margin-30;
 }
 
 .we-header{
