@@ -1,10 +1,13 @@
+@import 'main-theme';
+@import 'my-theme';
+
 *{
   margin: 0;
   padding: 0;
 }
-@import 'my-theme';
-@import 'main-theme';
 
+$color-error: #ED0131;
+$color-black: black;
 $margin-40: 40px;
 $margin-15: 15px;
 $margin-20: 20px;
@@ -12,7 +15,6 @@ $magrin-55: 55px;
 $margin-30: 30px;
 $margin-60: 60px;
 $padding-main: 2px;
-
 $font-size-name: 40px;
 $font-weight-main: 600;
 $font-size-32: 32px;
@@ -54,7 +56,7 @@ $line-height-large: 2em;
 
 @media screen and (min-width: 356px) {
     .white {
-      border-left: 1px solid #000000;
+      border-left: 1px solid $color-black;
     }
     .blue {
       box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
@@ -346,12 +348,12 @@ fieldset{
 .contacts-table{
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  border: 1px solid $color-black;
   border-collapse: collapse;
 }
 
 .contacts-cell{
-  border: 1px black solid;
+  border: 1px $color-black solid;
   padding: 5px;
   text-align: left;
 }
@@ -370,7 +372,7 @@ textarea {
 }
 
 .asterisk{
-  color: #ED0131;
+  color: $color-error;
   margin-left: .3em;
 }
 
@@ -411,12 +413,12 @@ input[type="email"] {
 }
 
 input:invalid{
-  border-color: #ED0131;
+  border-color: $color-error;
 }
 
 .error{
   display: none;
-  color: #ED0131;
+  color: $color-error;
 }
 
 .email:invalid + .error {
