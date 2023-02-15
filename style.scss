@@ -40,7 +40,7 @@ $line-height-large: 2em;
     border-left: none;
   }
   .blue {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $color-black;
   }
 }
 @keyframes image-hover{
@@ -101,7 +101,7 @@ $line-height-large: 2em;
 }
 
 .white {
-  background-color: $color-bg-right;
+  background-color: var(--color-bg-right);
   position: relative;
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr;
@@ -115,7 +115,7 @@ $line-height-large: 2em;
 }
 
 .blue{
-  background-color: $color-bg-left;
+  background-color: var(--color-bg-left);
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 0.2fr 1fr 1.2fr;
   grid-template-areas: 
@@ -137,13 +137,13 @@ $line-height-large: 2em;
 
 .name{
   @extend .name-block;
-  color: $color-name;
+  color: var(--color-name);
   margin-top: $margin-60;
 }
 
 .surname{
   @extend .name-block;
-  color: $color-surname;
+  color: var(--color-surname);
   margin-bottom: $margin-15;
 }
 
@@ -157,7 +157,7 @@ $line-height-large: 2em;
 .position{
   font-weight: $font-weight-main;
   font-size: $font-size-16;
-  color: $color-font-left;
+  color: var(--color-font-left);
   margin-top: $margin-20;
   margin-bottom: $margin-40;
   margin-left: $margin-40;
@@ -173,10 +173,10 @@ $line-height-large: 2em;
 .contact{
   font-weight: $font-weight-main;
   font-size: $font-size-32;
-  color: $color-font-left;
+  color: var(--color-font-left);
   line-height: $line-height-large;
   border-bottom: $border-line-1;
-  border-color: $border-line-1-color;
+  border-color: var(--border-line-1-color);
   margin-right: $margin-15;
   margin-bottom: $margin-30;
 }
@@ -185,13 +185,13 @@ $line-height-large: 2em;
   font-weight: bold;
   font-size: $font-size-24;
   line-height: $line-height-medium;
-  color: $color-font-left;
+  color: var(--color-font-left);
 }
 
 .contact-value{
   line-height: $line-height-large;
   margin-bottom: $margin-20;
-  color: $color-font-left;
+  color: var(--color-font-left);
   font-weight: $font-weight-main;
   font-size: $font-size-16;
 }
@@ -200,9 +200,9 @@ $line-height-large: 2em;
   font-weight: $font-weight-main;
   font-size: $font-size-32;
   line-height: $line-height-large;
-  color: $color-font-left;
+  color: var(--color-font-left);
   border-bottom: $border-line-1;
-  border-color: $border-line-1-color;
+  border-color: var(--border-line-1-color);
   margin-right: $margin-15;
   margin-bottom: $margin-30;
 }
@@ -212,17 +212,17 @@ $line-height-large: 2em;
   font-size: $font-size-16;
   line-height: $line-height-medium;
   font-weight: $font-weight-main;
-  color: $color-font-left;
+  color: var(--color-font-left);
   margin-bottom: $margin-30;
   grid-area: languages;
 }
 
 .link {
-  color: $link-base-color;
+  color: var(--link-base-color);
   text-decoration: underline;
 
   &:visited {
-  color: $link-visited-color;
+  color: var(--link-visited-color);
   text-decoration: underline;
   }
 
@@ -241,9 +241,9 @@ $line-height-large: 2em;
   @include margin-side();
   font-weight: $font-weight-main;
   font-size: $font-size-36;
-  color: $color-font-right;
+  color: var(--color-font-right);
   border-bottom: $border-line-2;
-  border-color: $border-line-2-color;
+  border-color: var(--border-line-2-color);
   margin-bottom: $margin-30;
   margin-top: $margin-60;
   line-height: $line-height-large;
